@@ -45,6 +45,8 @@ Token nextToken(){
     return current;
 }
 
+
+/*
 int main(){
     Token next = nextToken();
     while(next.tCode != ERROR){
@@ -54,3 +56,4 @@ int main(){
     }
     return 0;
 }
+ */
