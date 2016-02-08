@@ -1,8 +1,9 @@
 #include "Parser.h"
 
 int main(){
-    Lexer myLexer;
-    Parser myParser = Parser(&myLexer);
+    Lexer *myLexer = new Lexer();
+    Parser myParser(myLexer);
     myParser.parse();
+    delete myLexer;
     return 0;
 }

@@ -7,13 +7,5 @@ class Parser{
         ~Parser();
     private:
         Lexer *lexer;
-        Token token;
+        Token *token;
 };
-
-Parser::Parser(Lexer *lex){
-    lexer = lex;
-}
-
-Parser::~Parser(){
-    delete lexer;
-}
