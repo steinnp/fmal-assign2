@@ -25,7 +25,7 @@ TokenCode inputType(char nextChar){
     }
 }
 
-Token nextToken(){
+Token Lexer::nextToken(){
     Token current;
     std::cin >> std::ws;
     current.lexeme = std::string(1,(char)getchar());
