@@ -33,13 +33,13 @@ Token Lexer::nextToken(){
     if(current.tCode == INT || current.tCode == ID){
         while(current.tCode == inputType((char)std::cin.peek())){
             current.lexeme += std::string(1,(char)getchar());
-            if(current.lexeme == "end"){
-                current.tCode = END;
-                return current;
-            } else if(current.lexeme == "print"){
-                current.tCode = PRINT;
-                return current;
-            }
+        }
+        if(current.lexeme == "end"){
+            current.tCode = END;
+            return current;
+        } else if(current.lexeme == "print"){
+            current.tCode = PRINT;
+            return current;
         }
     }
     return current;
