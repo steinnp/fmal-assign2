@@ -1,6 +1,6 @@
 #include "Token.h"
 
 class Lexer{
-    public:
-        Token nextToken();
+public:
+    Token nextToken();
 };

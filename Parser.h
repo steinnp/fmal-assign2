@@ -1,11 +1,11 @@
 #include "Lexer.h"
 
 class Parser{
-    public:
+public:
     void parse();
     Parser(Lexer*);
     ~Parser();
-    private:
+private:
     Lexer *lexer;
     Token token;
     bool error;
