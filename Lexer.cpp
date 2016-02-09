@@ -44,16 +44,3 @@ Token Lexer::nextToken(){
     }
     return current;
 }
-
-
-/*
-int main(){
-    Token next = nextToken();
-    while(next.tCode != ERROR){
-        std::cout << next.lexeme << std::endl;
-        std::cout << next.tCode << std::endl;
-        next = nextToken();
-    }
-    return 0;
-}
- */
