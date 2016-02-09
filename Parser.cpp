@@ -7,9 +7,6 @@ Parser::Parser(Lexer *lex){
     error = false;
 }
 
-Parser::~Parser(){
-}
-
 void Parser::raiseError(){
     std::cout << "Syntax error!" << std::endl;
     error = true;
@@ -166,4 +163,5 @@ void Parser::statements(){
 
 void Parser::parse(){
     statements();
+    return;
 }

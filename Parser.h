@@ -3,8 +3,7 @@
 class Parser{
 public:
     void parse();
-    Parser(Lexer*);
-    ~Parser();
+    Parser(Lexer* lex);
 private:
     Lexer *lexer;
     Token token;
